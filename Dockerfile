@@ -116,8 +116,17 @@ RUN git clone https://github.com/comfyanonymous/ComfyUI.git . && \
         git checkout $COMFYUI_COMMIT; \
     fi
 
-# Copy custom nodes (preserves your exact setup)
-COPY custom_nodes/ /app/custom_nodes/
+# Clone essential custom nodes instead of copying local files
+RUN cd /app/custom_nodes && \
+    git clone https://github.com/ltdrdata/ComfyUI-Manager.git && \
+    git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git && \
+    git clone https://github.com/crystian/ComfyUI-Crystools.git && \
+    git clone https://github.com/jags111/efficiency-nodes-comfyui.git && \
+    git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+
+# Install custom node dependencies
+RUN cd /app/custom_nodes/ComfyUI-Manager && \
+    if [ -f "requirements.txt" ]; then pip install -r requirements.txt; fi || true
 
 # Copy configuration files if they exist
 COPY extra_model_paths.yaml* /app/
