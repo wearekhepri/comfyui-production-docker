@@ -1,0 +1,344 @@
+# From ComfyUI-Allor
+rembg
+onnx
+
+# Optional for auto updates
+gitpython
+
+# If you want you can install onnxruntime with GPU support
+# onnxruntime[gpu]
+
+# For Nvidia (only for GPU onnxruntime)
+# tensorrt
+# cuda-python
+
+# From ComfyUI-Colortools
+
+# From ComfyUI-Crystools
+deepdiff
+torch
+numpy
+Pillow>=9.5.0
+pynvml; platform_machine != 'aarch64'
+py-cpuinfo
+piexif
+jetson-stats; platform_machine == 'aarch64'
+
+# From ComfyUI-GGUF
+# main
+gguf>=0.13.0
+# optional - tokenizer
+sentencepiece
+protobuf
+
+# From ComfyUI-Hangover-Nodes
+torchvision
+Pillow
+transformers>=4.35.0
+numpy
+torch
+
+# From ComfyUI-Manager
+GitPython
+PyGithub
+matrix-client==0.4.0
+transformers
+huggingface-hub>0.20
+typer
+rich
+typing-extensions
+toml
+uv
+chardet
+
+# From ComfyUI-nunchaku
+diffusers>=0.33.1
+accelerate
+sentencepiece
+protobuf
+huggingface_hub
+tomli
+
+# PuLID dependencies
+insightface
+opencv-python
+facexlib
+onnxruntime
+timm
+
+# From ComfyUI-tbox
+torch
+torchvision
+opencv-python-headless>=4.7.0.72
+scikit-learn
+scikit-image
+insightface
+ultralytics
+onnxruntime-gpu==1.18.0 
+onnxruntime==1.18.0
+imageio_ffmpeg
+pykalman
+# From ComfyUI_LayerStyle
+numpy
+pillow
+torch
+matplotlib
+Scipy
+scikit_image
+scikit_learn
+opencv-contrib-python
+pymatting
+timm
+colour-science
+transformers>=4.43.2
+blend_modes
+huggingface_hub>=0.23.4
+loguru
+
+# From Node_Fun_ComfyUI
+replicate
+fal-client
+
+# From SDVN_Comfy_node
+#If MacOs - Please install aria2 manually via brew
+aria2;sys_platform != 'darwin'
+openai >= 1.76.0
+gallery-dl
+instaloader
+googletrans-py
+gradio_client>=1.5.4
+opencv-python
+google-genai
+PyYAML
+pandas
+ultralytics>=8.3.107
+# From comfy-image-saver
+
+piexif
+
+# From comfyui-art-venture
+timm
+transformers
+fairscale
+pycocoevalcap
+opencv-python
+qrcode[pil]
+pytorch_lightning
+kornia
+pydantic
+segment_anything
+omegaconf
+boto3>=1.34.101
+
+# From comfyui-brushnet
+diffusers>=0.27.0
+accelerate>=0.29.0,<0.32.0
+peft>=0.7.0
+
+# From comfyui-easy-use
+diffusers
+accelerate
+clip_interrogator>=0.6.0
+lark
+onnxruntime
+opencv-python
+sentencepiece
+spandrel
+matplotlib
+peft
+
+# From comfyui-florence2
+transformers>=4.39.0,!=4.50.*
+matplotlib
+timm
+pillow>=10.2.0
+peft
+accelerate>=0.26.0
+
+# From comfyui-impact-pack
+segment-anything
+scikit-image
+piexif
+transformers
+opencv-python-headless
+scipy>=1.11.4
+numpy
+dill
+matplotlib
+git+https://github.com/facebookresearch/sam2
+# From comfyui-impact-subpack
+matplotlib
+ultralytics>=8.3.162
+numpy
+opencv-python-headless
+dill
+# From comfyui-inspire-pack
+matplotlib
+cachetools
+numpy
+webcolors
+opencv-python
+
+# From comfyui-kjnodes
+pillow>=10.3.0
+scipy
+color-matcher
+matplotlib
+huggingface_hub
+mss
+opencv-python
+# From comfyui-rmbg
+# Base dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+Pillow>=9.0.0
+numpy>=1.22.0
+huggingface-hub>=0.19.0
+transformers>=4.35.0
+safetensors>=0.3.0
+transparent-background>=1.2.4
+tqdm>=4.65.0
+segment-anything>=1.0
+groundingdino-py>=0.4.0
+opencv-python>=4.7.0
+scipy>=1.10.0
+onnxruntime>=1.15.0
+onnxruntime-gpu>=1.15.0
+# From comfyui-wd14-tagger
+onnxruntime
+# From comfyui_controlnet_aux
+torch
+importlib_metadata
+huggingface_hub
+scipy
+opencv-python>=4.7.0.72
+filelock
+numpy
+Pillow
+einops
+torchvision
+pyyaml
+scikit-image
+python-dateutil
+mediapipe
+svglib
+fvcore
+yapf
+omegaconf
+ftfy
+addict
+yacs
+yapf
+trimesh[easy]
+albumentations
+scikit-learn
+matplotlib
+
+# From comfyui_essentials
+numba
+colour-science
+rembg
+pixeloe
+transparent-background
+# From comfyui_instantid
+insightface
+onnxruntime
+onnxruntime-gpu
+
+# From comfyui_layerstyle
+numpy<2.0
+pillow
+torch
+matplotlib
+Scipy
+scikit_image
+scikit_learn
+opencv-contrib-python
+pymatting
+segment_anything
+timm
+addict
+yapf
+colour-science
+wget
+mediapipe
+loguru
+typer_config
+fastapi
+rich
+google-generativeai
+diffusers
+omegaconf
+tqdm
+kornia
+ultralytics>=8.2.0
+blend_modes
+blind-watermark
+qrcode
+pyzbar
+transparent-background
+huggingface_hub>=0.23.4
+accelerate>=0.26.0
+onnxruntime
+torchscale
+wandb
+psd-tools
+hydra-core
+protobuf>=3.20.3
+inference-cli>=0.13.0
+inference-gpu[yolo-world]>=0.13.0
+bitsandbytes>=0.41.1
+transformers>=4.43.2
+peft>=0.12.0
+iopath
+
+# From comfyui_pulid_flux_ll
+cython
+facexlib
+insightface
+onnxruntime
+onnxruntime-gpu; sys_platform != 'darwin' and (platform_machine == 'x86_64' or platform_machine == 'AMD64')
+ftfy
+timm
+
+# From comfyui_segment_anything
+segment_anything
+timm
+addict
+yapf
+# From efficiency-nodes-comfyui
+clip-interrogator
+simpleeval
+
+# From pulid_comfyui
+facexlib
+insightface
+onnxruntime
+onnxruntime-gpu
+ftfy
+timm
+
+# From rgthree-comfy
+
+# From was-ns
+cmake
+fairscale>=0.4.4
+git+https://github.com/ltdrdata/img2texture.git
+git+https://github.com/ltdrdata/cstr
+gitpython
+imageio
+joblib
+matplotlib
+numba
+numpy
+opencv-python-headless[ffmpeg]
+pilgram
+git+https://github.com/ltdrdata/ffmpy.git
+rembg
+scikit-image>=0.20.0
+scikit-learn
+scipy
+timm>=0.4.12
+tqdm
+transformers
+

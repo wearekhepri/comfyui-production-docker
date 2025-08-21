@@ -1,0 +1,45 @@
+# Ignore model files (they're mounted as volumes)
+models/**/*.safetensors
+models/**/*.ckpt
+models/**/*.pth
+models/**/*.bin
+models/**/*.onnx
+
+# Ignore outputs
+output/
+input/
+temp/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments (we create fresh in container)
+venv/
+env/
+ENV/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Backups
+*.bak
+*.backup
+*~ 
