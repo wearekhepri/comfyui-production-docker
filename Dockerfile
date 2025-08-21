@@ -18,12 +18,19 @@ ENV DEBIAN_FRONTEND=noninteractive \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
     CUDA_MODULE_LOADING=LAZY
 
-# Install system dependencies (comprehensive list for custom nodes)
+# Install system dependencies and Python 3.11
 RUN apt-get update && apt-get install -y \
-    # Python
+    # Prerequisites for adding PPA
+    software-properties-common \
+    gpg-agent \
+    && add-apt-repository ppa:deadsnakes/ppa \
+    && apt-get update \
+    && apt-get install -y \
+    # Python 3.11 from deadsnakes PPA
     python${PYTHON_VERSION} \
     python${PYTHON_VERSION}-dev \
     python${PYTHON_VERSION}-venv \
+    python${PYTHON_VERSION}-distutils \
     python3-pip \
     # Build tools
     build-essential \
