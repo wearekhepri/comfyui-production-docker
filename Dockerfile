@@ -32,8 +32,7 @@ RUN apt-get update && apt-get install -y \
     # Git (required for many custom nodes)
     git \
     git-lfs \
-    # OpenCV dependencies
-    libopencv-dev \
+    # OpenCV and graphics dependencies
     libglib2.0-0 \
     libsm6 \
     libxext6 \
